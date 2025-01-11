@@ -9,7 +9,7 @@ class SinglyLinkedList:
     def insert_last(self,data):
         pNew=DataNode(data)
         if self.head is None:
-          self.head = pNew
+            self.head = pNew
         else:
             start=self.head
             while start.next is not None:
@@ -28,8 +28,8 @@ class SinglyLinkedList:
         else:
             print("This is an empty list.")
 def main():
-  mylist = SinglyLinkedList()
-  for _ in range(int(input())):
-    mylist.insert_last(input())
-  mylist.traverse()
+    mylist = SinglyLinkedList()
+    for _ in range(int(input())):
+        mylist.insert_last(input())
+        mylist.traverse()
 main()
